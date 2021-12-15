@@ -15,8 +15,7 @@ var app5 = new Vue(
         },
         created: function(){
             
-            for( this.email.length < this.numberMail ) {
-
+            for( let i = 0; this.email.length < this.numberMail; i++ ) {
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((singleEmail) => {
                     this.email.push(singleEmail.data.response)
