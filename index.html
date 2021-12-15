@@ -12,7 +12,7 @@
     
     <div id="root">
 
-        <ul>
+        <ul v-if="visibleEmail">
             <li v-for="element in email">
                 {{ element }}
             </li>
