@@ -5,14 +5,10 @@ var app5 = new Vue(
         el: '#root',
         data: {
             email: [],
-            visibleEmail: false,
             numberMail: 10,
             
         },
         methods:{
-            visible: function(){
-                
-            }
             
         },
         created: function(){
